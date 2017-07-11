@@ -1,0 +1,20 @@
+071117 After class meeting
+
+6 weeks and 12 meetings left
+
+Let’s get our project go parallel: Studying new models, and thinking about the ultimate goal of the project, for now, 
+
+1) Think about how to extract knowledge from the big dataset (go to Dbpedia, and Freebase), for reference SQAD of Stanford.
+
+2) If you ask a new question that our model couldn’t catch, how our model gonna deal with that? 
+
+For the next week: [Due Friday]
+1-a. implement chatbot using seq2sesq model 
+(goal: get to know how it works, how well it performs, and the downside of the model)
+1-b. Study GRU (just like what we did on Seq2seq model)
+1-c. Find best parameters of the Word2Vec model that we implemented earlier
+(Tweak it, give some variations, play with it)
+
+For the coming week after next week:
+2-a. Study memory network
+2-b. Study end-to-end network
