@@ -3,5 +3,6 @@ Question Answering System: Just A Rather Deep Intelligent System(JARDIS)
 
 Includes: 
 
-- English word2vec
-- Korean word2vec
+- English embedding using word2vec
+- Korean embedding using word2vec
+- Korean embedding using doc2vec
