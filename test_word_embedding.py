@@ -13,3 +13,6 @@ num_pairs=len(open(root_test,"r").readlines())
 print("Pearson correlation coefficient = %.2f" % similarity[0][0])
 print("Spearman rank-order correlation coefficient = %.2f" % similarity[1][0])
 print("Number of missing words = " + repr(round(similarity[2]*num_pairs/100)) + "/" + repr(num_pairs))
+
+
+
