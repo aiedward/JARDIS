@@ -6,3 +6,6 @@ Includes:
 - English embedding using word2vec
 - Korean embedding using word2vec
 - Korean embedding using doc2vec
+- Reading materials
+- Weekly presentations
+- Weekly notes and future work
