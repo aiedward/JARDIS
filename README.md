@@ -2,13 +2,13 @@
 Question Answering System: Just A Rather Deep Intelligent System(JARDIS)
 
 ## Team members:
-  - 유진 (White Widow)
-  - 재준 (Code Man)
-  - 준식 (Captain Korea)
-  - 규빈 (Hulk)
-  - 현호 (Thor)
-  - 영표 (Hawkeye)
-  - Zakaria (Zak Fury)
+  - 유진
+  - 재준 
+  - 준식 
+  - 규빈 
+  - 현호 
+  - 영표 
+  - Zakaria
   
 ## The Project content(so far): 
   - English embedding using word2vec
