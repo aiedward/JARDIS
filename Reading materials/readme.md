@@ -11,4 +11,5 @@
 - LSTM: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 - seq2seq (korean): https://tensorflowkorea.gitbooks.io/tensorflow-kr/content/g3doc/tutorials/seq2seq/
 - seq2seq (english): https://www.tensorflow.org/tutorials/seq2seq
-- QA using KBs(important) https://arxiv.org/pdf/1406.3676.pdf
+- QA using KBs(important): https://arxiv.org/pdf/1406.3676.pdf
+- seq2seq: https://arxiv.org/pdf/1506.05869.pdf
