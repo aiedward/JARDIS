@@ -36,7 +36,7 @@ finish this weeks work before 07/11/2017
 ## (07/11/2017) After class meeting
 - Idea discussion
     + We discussed KBs and how to turn them into training data for our model
-    + Downlaod: http://wiki.dbpedia.org/downloads-2016-04
+    + DBpedia: http://wiki.dbpedia.org/downloads-2016-04
     + We discussed how to use word2vec to create question vecs and then feed them to the model
 - seq2seq discussion (Please check the code here: https://github.com/Conchylicultor/DeepQA)
 
