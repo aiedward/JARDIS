@@ -35,17 +35,17 @@ finish this weeks work before 07/11/2017
 
 ## (07/11/2017) After class meeting
 - Idea discussion
--- We discussed KBs and how to turn them into training data for our model
--- Downlaod: http://wiki.dbpedia.org/downloads-2016-04
--- We discussed how to use word2vec to create question vecs and then feed them to the model
+    + We discussed KBs and how to turn them into training data for our model
+    + Downlaod: http://wiki.dbpedia.org/downloads-2016-04
+    + We discussed how to use word2vec to create question vecs and then feed them to the model
 - seq2seq discussion (Please check the code here: https://github.com/Conchylicultor/DeepQA)
 
 ### 1. Due 07/23/2017
 - run and uplaud the code for korean word2vec to github
 - gather a korean corpus from wikipedia and other corpuses from:
--- https://sites.google.com/site/rmyeid/projects/polyglot
--- http://opus.lingfil.uu.se/PHP.php
--- Note that the polyglot project containes both the dumps and the embeddings so why not try to compare our embedding with extra data to their embedding
+    + https://sites.google.com/site/rmyeid/projects/polyglot
+    + http://opus.lingfil.uu.se/PHP.php
+    + Note that the polyglot project containes both the dumps and the embeddings so why not try to compare our embedding with extra data to their embedding
 - read both QA papers shared in the reading materials folder
 
 ### 2. Due 07/25/2017
