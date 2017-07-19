@@ -1,5 +1,7 @@
 # Progress notes
 
+---
+
 ## (07/09/2017) Online meeting  
 
 ### 1. Due 07/11/2017
@@ -13,6 +15,8 @@ with Neural Networks"](https://papers.nips.cc/paper/5346-sequence-to-sequence-le
     + Pearson correlation is in scipy.
 - We can find the best word2vec parameter.(window size) Usually 8 is the best.
 - Try CBOW, SkipGram, Glove, Kor2vec and see which one is better.
+
+---
 
 ## (07/11/2017) After class meeting
 
@@ -29,9 +33,13 @@ Let’s get our project go parallel: Studying new models, and thinking about the
 - Study memory network
 - Study end-to-end network
 
-## (Online meeting) 07/16/2017
+---
 
-finish this weeks work before 07/11/2017
+## (07/16/2017) Online meeting
+
+finish this week's work before 07/11/2017
+
+---
 
 ## (07/11/2017) After class meeting
 - Idea discussion
@@ -51,3 +59,4 @@ finish this weeks work before 07/11/2017
 ### 2. Due 07/25/2017
 - coming soon
 
+---
