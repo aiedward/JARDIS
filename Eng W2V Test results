@@ -1,0 +1,189 @@
+Out of the four below,
+Parameters : 
+	Vector size = 100,
+	Window size = 8,
+	Min count = 10,
+	skip-gram/CBOW = skip-gram,
+	Hierarchical softmax/Negative sampling = Negative sampling 
+performed best :-)
+
+
+data/Test_data/models/2017-07-20_09-48-19
+Parameters : 
+	Vector size = 100,
+	Window size = 8,
+	Min count = 10,
+	skip-gram/CBOW = CBOW,
+	Hierarchical softmax/Negative sampling = Negative sampling 
+
+The model took 1.1185805241266886 to train.
+Vocabulary length : 47134
+
+
+Testing from : /home/snu/data/Test_data/
+
+Test results on WS353-english-rel.txt: 
+Pearson correlation coefficient = 0.53
+Spearman rank-order correlation coefficient = 0.53
+Number of missing words = 1/252
+
+Test results on WS-353-EN.txt: 
+Pearson correlation coefficient = 0.60
+Spearman rank-order correlation coefficient = 0.64
+Number of missing words = 4/65
+
+Test results on WS353-english-sim.txt: 
+Pearson correlation coefficient = 0.64
+Spearman rank-order correlation coefficient = 0.63
+Number of missing words = 2/201
+
+Test results on SE17-EN.txt: 
+Pearson correlation coefficient = 0.63
+Spearman rank-order correlation coefficient = 0.62
+Number of missing words = 169/518
+
+Test results on WordSimilarity-353-EN.txt: 
+Pearson correlation coefficient = 0.66
+Spearman rank-order correlation coefficient = 0.68
+Number of missing words = 3/353
+
+Average test results: 
+Average Pearson Correlation  = 0.61
+Average Pearson Spearman rank-order correlation = 0.62
+Total number of missing words : 179/1389
+
+/data/Test_data/models/2017-07-20_09-53-21
+
+Parameters : 
+	Vector size = 100,
+	Window size = 8,
+	Min count = 10,
+	skip-gram/CBOW = CBOW,
+	Hierarchical softmax/Negative sampling = Negative sampling 
+
+The model took 1.1088164528210958 to train.
+Vocabulary length : 47134
+
+
+Testing from : /home/snu/data/Test_data/
+
+Test results on WS353-english-rel.txt: 
+Pearson correlation coefficient = 0.51
+Spearman rank-order correlation coefficient = 0.51
+Number of missing words = 1/252
+
+Test results on WS-353-EN.txt: 
+Pearson correlation coefficient = 0.58
+Spearman rank-order correlation coefficient = 0.63
+Number of missing words = 4/65
+
+Test results on WS353-english-sim.txt: 
+Pearson correlation coefficient = 0.64
+Spearman rank-order correlation coefficient = 0.63
+Number of missing words = 2/201
+
+Test results on SE17-EN.txt: 
+Pearson correlation coefficient = 0.62
+Spearman rank-order correlation coefficient = 0.61
+Number of missing words = 169/518
+
+Test results on WordSimilarity-353-EN.txt: 
+Pearson correlation coefficient = 0.66
+Spearman rank-order correlation coefficient = 0.68
+Number of missing words = 3/353
+
+Average test results: 
+Average Pearson Correlation  = 0.60
+Average Pearson Spearman rank-order correlation = 0.61
+Total number of missing words : 179/1389
+
+data/Test_data/models/2017-07-23_16-23-16
+
+Parameters : 
+	Vector size = 100,
+	Window size = 8,
+	Min count = 10,
+	skip-gram/CBOW = skip-gram,
+	Hierarchical softmax/Negative sampling = Negative sampling 
+
+The model took 2.863444423675537 to train.
+Vocabulary length : 47134
+
+
+Testing from : /home/snu/data/Test_data/
+
+Test results on WS353-english-rel.txt: 
+Pearson correlation coefficient = 0.54
+Spearman rank-order correlation coefficient = 0.54
+Number of missing words = 1/252
+
+Test results on WS-353-EN.txt: 
+Pearson correlation coefficient = 0.66
+Spearman rank-order correlation coefficient = 0.69
+Number of missing words = 4/65
+
+Test results on WS353-english-sim.txt: 
+Pearson correlation coefficient = 0.67
+Spearman rank-order correlation coefficient = 0.66
+Number of missing words = 2/201
+
+Test results on SE17-EN.txt: 
+Pearson correlation coefficient = 0.69
+Spearman rank-order correlation coefficient = 0.67
+Number of missing words = 169/518
+
+Test results on WordSimilarity-353-EN.txt: 
+Pearson correlation coefficient = 0.69
+Spearman rank-order correlation coefficient = 0.70
+Number of missing words = 3/353
+
+Average test results: 
+Average Pearson Correlation  = 0.65
+Average Pearson Spearman rank-order correlation = 0.65
+Total number of missing words : 179/1389
+
+
+/data/Test_data/models/2017-07-23_16-26-34
+
+Parameters : 
+	Vector size = 100,
+	Window size = 5,
+	Min count = 10,
+	skip-gram/CBOW = skip-gram,
+	Hierarchical softmax/Negative sampling = Negative sampling 
+
+The model took 2.04430296421051 to train.
+Vocabulary length : 47134
+
+
+Testing from : /home/snu/data/Test_data/
+
+Test results on WS353-english-rel.txt: 
+Pearson correlation coefficient = 0.55
+Spearman rank-order correlation coefficient = 0.54
+Number of missing words = 1/252
+
+Test results on WS-353-EN.txt: 
+Pearson correlation coefficient = 0.62
+Spearman rank-order correlation coefficient = 0.66
+Number of missing words = 4/65
+
+Test results on WS353-english-sim.txt: 
+Pearson correlation coefficient = 0.67
+Spearman rank-order correlation coefficient = 0.66
+Number of missing words = 2/201
+
+Test results on SE17-EN.txt: 
+Pearson correlation coefficient = 0.67
+Spearman rank-order correlation coefficient = 0.66
+Number of missing words = 169/518
+
+Test results on WordSimilarity-353-EN.txt: 
+Pearson correlation coefficient = 0.68
+Spearman rank-order correlation coefficient = 0.70
+Number of missing words = 3/353
+
+Average test results: 
+Average Pearson Correlation  = 0.64
+Average Pearson Spearman rank-order correlation = 0.64
+Total number of missing words : 179/1389
