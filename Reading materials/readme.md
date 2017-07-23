@@ -14,3 +14,4 @@
 - QA using KBs(important): https://arxiv.org/pdf/1406.3676.pdf
 - seq2seq: https://arxiv.org/pdf/1506.05869.pdf
 - Memory networks: https://arxiv.org/pdf/1503.08895.pdf
+- Improved memory networks: https://arxiv.org/pdf/1603.01417.pdf
