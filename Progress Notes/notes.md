@@ -57,6 +57,10 @@ finish this week's work before 07/11/2017
 - read both QA papers shared in the reading materials folder
 
 ### 2. Due 07/25/2017
-- coming soon
+- Read the Memory networks paper
+- Check these following implementations:
+    + Implementation 1: https://github.com/barronalex/Dynamic-Memory-Networks-in-TensorFlow
+    + Implementation 2: https://github.com/therne/dmn-tensorflow
+    + Implementation 3: https://github.com/ethancaballero/Improved-Dynamic-Memory-Networks-DMN-plus
 
 ---
