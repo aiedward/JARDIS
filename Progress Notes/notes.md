@@ -64,3 +64,23 @@ finish this week's work before 07/11/2017
     + Implementation 3: https://github.com/ethancaballero/Improved-Dynamic-Memory-Networks-DMN-plus
 
 ---
+
+## (07/23/2017) Online meeting
+
+We discussed the progress and future work
+
+---
+
+## (07/26/2017) After class meeting
+
+We discussed the future work and goals. We set 3 different paths/datasets to choose from before next meeting and discussed possible solutions that we could use with each dataset:
+
+- DBPEDIA: Intresting but might end up very challenging since none of the members know how to use write queries with SPARQL, and also time consuming due to the absence of the data. If we choose this path, we will have to prepare the data first which consists of taking triples from a huge set of triples using SPARQL and then construct their following questions (Something like this: https://www.dropbox.com/s/tohrsllcfy7rch4/SimpleQuestions_v2.tgz but this dataset uses freebase and freebase is deprecated)
+    + I don't recommend this path because we don't have time, and you might end up without any results
+
+- BaBi: BaBi is a less complicated path due to the fact that the datasets are ready and clean. However it contains many taks and since we cannot make a model that can solve all the tasks due to our knowledge and time limitations, we will have to figure out a way to deal with it
+
+- SQUAD: is the most straight forward task because it only has one task and it consists of finding the answer from a given paragraph. However, the task is quite challenging which makes it quite intresting compared to the others.
+
+Please let me know your choice by Sunday, because we will have to start implementing soon. Once we decide which path to take we will have to load the data and seperate it into several variables such as X_train, Y_train, X_dev... after that we will have to implement a baseline(Such as random answer or something else).
+
