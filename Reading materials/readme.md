@@ -1,5 +1,5 @@
-# Reading/Watching/Listning materials:
-
+# Reading/Watching/Listening materials:
+- SQuAD (blog): https://rajpurkar.github.io/mlx/qa-and-squad/
 - seq2seq: https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf
 - GRU-1: https://arxiv.org/pdf/1409.1259.pdf
 - GRU-2: https://pdfs.semanticscholar.org/2d9e/3f53fcdb548b0b3c4d4efb197f164fe0c381.pdf
