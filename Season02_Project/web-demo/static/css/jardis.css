@@ -1,0 +1,26 @@
+div.shadow {
+  box-shadow: 10 10 24px #bbb;
+  background: #fff;
+  color: #666;
+}
+
+.qa-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.qa-form .btn {
+  width: 200px;
+}
+
+.qa-form .form-control[readonly] {
+  background-color: #fff;
+}
+
+/* Font */
+.app-header, .qa-form label {
+  font-family: 'Shadows Into Light Two', sans-serif;
+}
+/*.qa-form input, .qa-form textarea, .qa-form button {*/
+    /*font-family: 'Roboto', sans-serif;*/
+/*}*/
