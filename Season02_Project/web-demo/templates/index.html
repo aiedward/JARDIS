@@ -73,29 +73,29 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-6 shadow qa-container">
+              <div class="form-group story-form-group">
+                <h4><label for="story">Story</label></h4>
+                <div id="story"></div>
+              </div>
+            </div>
+            <div class="col-md-6 shadow qa-container">
               <form class="qa-form">
                 <div class="form-group">
-                  <h4><label for="story">Story</label></h4>
-                  <textarea class="form-control" id="story" rows="10" readonly></textarea>
-                </div>
-                <div class="form-group">
-                  <h4>
-                    <label for="question">Question</label>
-                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip"
-                        data-placement="top" title="Use suggested question or type your own question"></i>
-                  </h4>
-                  <input class="form-control" id="question" autocomplete="off" spellcheck="false">
+                  <h4><label for="question">Question</label></h4>
+                  <input class="form-control" id="question" autocomplete="off" spellcheck="false" readonly>
                 </div>
                 <div class="form-group">
                   <h4><label for="answer">Answer</label></h4>
                   <textarea class="form-control" id="answer" rows="5" readonly></textarea>
                 </div>
                 <br>
-                <div class="text-center">
-                  <button class="btn btn-primary" id="get_answer" type="submit">Predict</button>
-                  <button class="btn btn-warning" id="get_story" type="submit">New story</button>
-                </div>
               </form>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="text-center">
+              <button class="btn btn-primary" id="get_answer" type="submit" style="width: 100px;">Predict</button>
+              <button class="btn btn-warning" id="get_story" type="submit" style="width: 100px;">New story</button>
             </div>
           </div>
         </div>
