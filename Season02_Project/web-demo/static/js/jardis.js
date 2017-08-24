@@ -23,6 +23,8 @@
         $.get('/get/story', function(dataObj) {
             $('#story').remove()
             $('.story-form-group').append('<div id="story"></div>')
+            $('#story').attr('question_idx', dataObj['question_idx'].toString())
+
             const words_elements = dataObj['story'].split(' ').map((el) => {
               let result = `<span>${ el }</span> `
               if (el.includes('.')) {
@@ -34,36 +36,37 @@
               $('#story').append(words_elements[i])
             }
 
-            $question.val(dataObj["question"])
-            $question.data('question_idx', dataObj["question_idx"])
-            $question.data('suggested_question', dataObj["question"])
+            $('#question').val(dataObj['question'])
             $answer.val('')
-            $answer.data('correct_answer', dataObj["correct_answer"])
+            $answer.data('correct_answer', dataObj['correct_answer'])
         })
     }
 
     function getAnswer() {
-        const questionIdx       = $question.data('question_idx'),
-            correctAnswer     = $answer.data('correct_answer'),
-            suggestedQuestion = $question.data('suggested_question'),
-            question          = $question.val()
-
-        const userQuestion = suggestedQuestion !== question? question : ''
-        const url = `/get/answer?question_idx=${ questionIdx }&user_question${ encodeURIComponent(userQuestion) }`
+        const questionIdx       = parseInt($('#story').attr('question_idx'))
+        const correctAnswer     = $('#answer').data('correct_answer')
+        const url               = `/get/answer?question_idx=${ questionIdx }`
 
         $.get(url, function(dataObj) {
-            const predAnswer = dataObj["pred_answer"]
-            const predProb = dataObj["pred_prob"]
-            const outputMessage = `Answer = '${ predAnswer }'\nConfidence score = ${ (predProb * 100).toFixed(2) }%`
+          const predAnswer = dataObj['pred_answer']
+          const predProb = dataObj['pred_prob']
+          const word2idx = dataObj['word2idx']
+          const predProbAll = dataObj['pred_prob_all']
 
-            // Show answer's feedback only if suggested question was used
-            if (userQuestion === '') {
-                if (predAnswer === correctAnswer)
-                    outputMessage += "\nCorrect!"
-                else
-                    outputMessage += "\nWrong. The correct answer is '" + correctAnswer + "'"
+          let outputMessage = `Answer = '${ predAnswer }'\nConfidence score = ${ (predProb * 100).toFixed(2) }%\n`
+          if (predAnswer === correctAnswer)
+            outputMessage += 'Correct!'
+          else
+            outputMessage += `Wrong. The correct answer is '${ correctAnswer }'`
+          $('#answer').val(outputMessage)
+
+          const c = $('#story').children()
+          for (let i = 0; i < c.length; i++) {
+            const p = predProbAll[word2idx[c[i].innerText]]
+            if (p && p > 0.3) {
+              c[i].setAttribute("style",`background-color: rgba(255, 255, 0, ${ p }`)
             }
-            $answer.val(outputMessage)
+          }
         })
     }
 
