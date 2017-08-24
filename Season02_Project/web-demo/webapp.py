@@ -11,7 +11,7 @@ def init(data_dir, model_file):
     global test_stories, model, inputs_test, queries_test, answers_test, idx2word, pred, vocab, vocab_size, word2idx
 
     test_stories, vocab, inputs_train, queries_train, answers_train, inputs_test, queries_test, answers_test, vocab_size, story_maxlen, query_maxlen, story_sentence_maxlen, word2idx, idx2word = MemN2N_bAbI.load_data()
-
+    
     model = load_model(data_dir+model_file)
     pred = model.predict([inputs_test, queries_test])
 
@@ -54,7 +54,7 @@ def get_answer():
     return flask.jsonify(result)
 
 if __name__ == "__main__":
-    MODEL_DIR = "checkpoint_babi_test/"
-    model_file="model-99.h5"
+    MODEL_DIR = "MemN2N_model_ckpt/checkpoint_babi_single_supporting_fact_10k/"
+    model_file = "model-99.h5" # "model-best.h5"
     init(MODEL_DIR, model_file)
     run()

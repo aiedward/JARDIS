@@ -60,7 +60,7 @@
         <div class="intro-text">
           <span class="name">JARDIS</span>
           <hr class="star-light">
-          <span class="skills">Just A Rather Deep Intelligent System with SQuAD dataset</span>
+          <span class="skills">Just A Rather Deep Intelligent System</br>with Question Answering</span>
         </div>
       </div>
     </header>
@@ -70,13 +70,15 @@
       <div class="container">
         <h2 class="text-center">Demo</h2>
         <hr class="star-primary">
-        <div class="container">
+        <div class="container" style="margin-top: 60px">
           <div class="row justify-content-center">
             <div class="col-md-6 shadow qa-container">
-              <div class="form-group story-form-group">
-                <h4><label for="story">Story</label></h4>
-                <div id="story"></div>
-              </div>
+              <form class="qa-form">
+                <div class="form-group story-form-group">
+                  <h4><label for="story">Story</label></h4>
+                  <div id="story"></div>
+                </div>
+              </form>
             </div>
             <div class="col-md-6 shadow qa-container">
               <form class="qa-form">
@@ -94,8 +96,8 @@
           </div>
           <div class="row justify-content-center">
             <div class="text-center">
-              <button class="btn btn-primary" id="get_answer" type="submit" style="width: 100px;">Predict</button>
-              <button class="btn btn-warning" id="get_story" type="submit" style="width: 100px;">New story</button>
+              <button class="btn btn-warning" id="get_story" type="submit" style="width: 100px; margin-right: 5px;">New story</button>
+              <button class="btn btn-primary" id="get_answer" type="submit" style="width: 100px; margin-left: 5px;">Predict</button>
             </div>
           </div>
         </div>
@@ -108,18 +110,20 @@
         <h2 class="text-center">About</h2>
         <hr class="star-light">
         <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p>SQuAD 데이터 셋과 bAbI 데이터 셋과 텐서플로우와 케라스와 논문을 읽고 구현을 하고 따라하고 레이어를 추가해보고
-              SQuAD 데이터 셋과 bAbI 데이터 셋과 텐서플로우와 케라스와 논문을 읽고 구현을 하고 따라하고 레이어를 추가해보고
-              SQuAD 데이터 셋과 bAbI 데이터 셋과 텐서플로우와 케라스와 논문을 읽고 구현을 하고 따라하고 레이어를 추가해보고
-              SQuAD 데이터 셋과 bAbI 데이터 셋과 텐서플로우와 케라스와 논문을 읽고
+          <div class="col-lg-6 ml-auto" style="padding: 0 30px">
+            <h4>1. Build a working QA system from a scratch</h4>
+            <p>
+              - Problem setup<br>
+              - Understanding the whole system from data to algorithm<br>
+              - Knowing the current state of the art
             </p>
           </div>
-          <div class="col-lg-4 mr-auto">
-            <p>SQuAD 데이터 셋과 bAbI 데이터 셋과 텐서플로우와 케라스와 논문을 읽고 구현을 하고 따라하고 레이어를 추가해보고
-              SQuAD 데이터 셋과 bAbI 데이터 셋과 텐서플로우와 케라스와 논문을 읽고 구현을 하고 따라하고 레이어를 추가해보고
-              SQuAD 데이터 셋과 bAbI 데이터 셋과 텐서플로우와 케라스와 논문을 읽고 구현을 하고 따라하고 레이어를 추가해보고
-              SQuAD 데이터 셋과 bAbI 데이터 셋과 텐서플로우와 케라스와 논문을 읽고
+          <div class="col-lg-6 mr-auto" style="padding: 0 30px">
+            <h4>2. Attack more advanced application or problem set</h4>
+            <p>
+              - bAbI<br>
+              - SQuAD<br>
+              - Knowledge based + DL QA system
             </p>
           </div>
           <div class="col-lg-8 mx-auto text-center">
@@ -139,31 +143,31 @@
         <hr class="star-primary">
         <div class="row">
           <div class="col-sm-12 portfolio-item">
-            <div class="portfolio-link">
+            <div id="zaki" class="portfolio-link">
               <img class="img-fluid" src="../static/img/profile/Zaki.jpeg" alt="">
-              <span style="position:absolute; color:white; font-size:45px; z-index:100">Zaki</span>
+              <span style="position:absolute; color:white; font-size:45px; z-index:100">Zaki</span><br>
             </div>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link">
+            <div id="jaejun" class="portfolio-link">
               <img class="img-fluid" src="../static/img/profile/Jaejun.jpeg" alt="">
               <span style="position:absolute; color:white; font-size:45px; z-index:100">Jaejun</span>
             </div>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link">
+            <div id="yujin" class="portfolio-link">
               <img class="img-fluid" src="../static/img/profile/Yujin.jpeg" alt="">
               <span style="position:absolute; color:white; font-size:45px; z-index:100">Yujin </span>
             </div>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link">
+            <div id="youngpyo" class="portfolio-link">
               <img class="img-fluid" src="../static/img/profile/Youngpyo.jpeg" alt="">
               <span style="position:absolute; color:white; font-size:45px; z-index:100">Youngpyo</span>
             </div>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link">
+            <div id="gyubin" class="portfolio-link">
               <img class="img-fluid" src="../static/img/profile/Gyubin.jpg" alt="">
               <span style="position:absolute; color:white; font-size:45px; z-index:100">Gyubin</span>
             </div>
@@ -175,7 +179,7 @@
             </div>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link">
+            <div id="hyunho" class="portfolio-link">
               <img class="img-fluid" src="../static/img/profile/Hyunho.jpeg" alt="">
               <span style="position:absolute; color:white; font-size:45px; z-index:100">Hyunho</span>
             </div>
@@ -277,6 +281,26 @@
     <!-- Custom scripts for this template -->
     <script src="../static/js/freelancer.js"></script>
     <script src="{{ url_for('static', filename='js/jardis.js') }}"></script>
+    <script>
+      $('#zaki').on('click', function() {
+        window.open('https://github.com/lezakkaz', '_blank')
+      })
+      $('#jaejun').on('click', function() {
+        window.open('https://github.com/jaejun-yoo', '_blank')
+      })
+      $('#yujin').on('click', function() {
+        window.open('https://github.com/marofmar', '_blank')
+      })
+      $('#gyubin').on('click', function() {
+        window.open('https://github.com/gyubin', '_blank')
+      })
+      $('#youngpyo').on('click', function() {
+        window.open('https://github.com/Youngpyoryu', '_blank')
+      })
+      $('#hyunho').on('click', function() {
+        window.open('https://github.com/M1zz', '_blank')
+      })
+    </script>
   </body>
 
 </html>

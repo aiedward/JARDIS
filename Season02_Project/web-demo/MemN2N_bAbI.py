@@ -108,26 +108,34 @@ def load_data():
 	path = get_file('babi-tasks-v1-2.tar.gz', origin='https://s3.amazonaws.com/text-datasets/babi_tasks_1-20_v1-2.tar.gz')
 	tar = tarfile.open(path)
 	challenges = {
-	    # QA1 with 10,000 samples
-	    'single_supporting_fact_10k': 'tasks_1-20_v1-2/en-10k/qa1_single-supporting-fact_{}.txt',
-	    # QA2 with 10,000 samples
-	    'two_supporting_facts_10k': 'tasks_1-20_v1-2/en-10k/qa2_two-supporting-facts_{}.txt',
-	    # Squad sample for test
-	    'squad_sample': './data/squad/sample_{}.txt',
-	    # Squad
-	    'squad': './data/squad/{}.txt',
+		'single_supporting_fact_10k': 'tasks_1-20_v1-2/en-10k/qa1_single-supporting-fact_{}.txt',
+		'two_supporting_facts_10k': 'tasks_1-20_v1-2/en-10k/qa2_two-supporting-facts_{}.txt',
+		'three-supporting-facts_10k': 'tasks_1-20_v1-2/en-10k/qa3_three-supporting-facts_{}.txt',
+		'two-arg-relations_10k': 'tasks_1-20_v1-2/en-10k/qa4_two-arg-relations_{}.txt',
+		'three-arg-relations_10k': 'tasks_1-20_v1-2/en-10k/qa5_three-arg-relations_{}.txt',
+		'yes-no-questions_10k': 'tasks_1-20_v1-2/en-10k/qa6_yes-no-questions_{}.txt',
+		'counting_10k': 'tasks_1-20_v1-2/en-10k/qa7_counting_{}.txt',
+		'lists-sets_10k': 'tasks_1-20_v1-2/en-10k/qa8_lists-sets_{}.txt',
+		'simple-negation_10k': 'tasks_1-20_v1-2/en-10k/qa9_simple-negation_{}.txt',
+		'indefinite-knowledge_10k': 'tasks_1-20_v1-2/en-10k/qa10_indefinite-knowledge_{}.txt',
+		'basic-coreference_10k': 'tasks_1-20_v1-2/en-10k/qa11_basic-coreference_{}.txt',
+		'conjunction_10k': 'tasks_1-20_v1-2/en-10k/qa12_conjunction_{}.txt',
+		'compound-coreference_10k': 'tasks_1-20_v1-2/en-10k/qa13_compound-coreference_{}.txt',
+		'time-reasoning_10k': 'tasks_1-20_v1-2/en-10k/qa14_time-reasoning_{}.txt',
+		'basic-deduction_10k': 'tasks_1-20_v1-2/en-10k/qa15_basic-deduction_{}.txt',
+		'basic-induction_10k': 'tasks_1-20_v1-2/en-10k/qa16_basic-induction_{}.txt',
+		'positional-reasoning_10k': 'tasks_1-20_v1-2/en-10k/qa17_positional-reasoning_{}.txt',
+		'size-reasoning_10k': 'tasks_1-20_v1-2/en-10k/qa18_size-reasoning_{}.txt',
+		'path-finding_10k': 'tasks_1-20_v1-2/en-10k/qa19_path-finding_{}.txt',
+		'agents-motivations_10k': 'tasks_1-20_v1-2/en-10k/qa20_agents-motivations_{}.txt'
 	}
-	babi = True
+
 	challenge_type = 'single_supporting_fact_10k'
 	challenge = challenges[challenge_type]
 
 	print('Extracting stories for the challenge:', challenge_type)
-	if babi:
-	    train_stories, train_story_sentence_maxlen, _ = get_stories(tar.extractfile(challenge.format('train')), babi)
-	    test_stories, test_story_sentence_maxlen, _ = get_stories(tar.extractfile(challenge.format('test')), babi)
-	else:
-	    train_stories, train_story_sentence_maxlen, train_stories_ori = get_stories(codecs.open(challenge.format('train'), "r", "utf-8"))
-	    test_stories, test_story_sentence_maxlen, test_stories_ori = get_stories(codecs.open(challenge.format('test'), "r", "utf-8"))
+	train_stories, train_story_sentence_maxlen, _ = get_stories(tar.extractfile(challenge.format('train')), True)
+	test_stories, test_story_sentence_maxlen, _ = get_stories(tar.extractfile(challenge.format('test')), True)
 
 	vocab = set()
 	for story, q, answer in train_stories + test_stories:
@@ -138,10 +146,8 @@ def load_data():
 	vocab_size = len(vocab) + 1
 	story_maxlen = max(map(len, (x for x, _, _ in train_stories + test_stories)))
 	query_maxlen = max(map(len, (x for _, x, _ in train_stories + test_stories)))
-	if babi:
-	    story_sentence_maxlen = vocab_size
-	else:
-	    story_sentence_maxlen = max([train_story_sentence_maxlen,test_story_sentence_maxlen])+1
+
+	story_sentence_maxlen = vocab_size
 
 	word_idx = dict((c, i + 1) for i, c in enumerate(vocab))
 	idx2word = dict(zip(word_idx.values(), word_idx.keys()))

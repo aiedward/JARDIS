@@ -196,7 +196,8 @@ header.masthead {
     align-items: center;
     max-width: 290px;
     margin: 0 auto;
-    background-color: black; }
+    background-color: black;
+    cursor: pointer;}
     #team .portfolio-item .portfolio-link .caption {
       position: absolute;
       width: 100%;
@@ -459,8 +460,30 @@ footer {
   -webkit-transition: all ease 0.2s;
   -moz-transition: all ease 0.2s;
   transition: all ease 0.2s;
-  z-index: 103;
+  z-index: 102;
 }
 .sitemap {
   margin-bottom: 8px;
+}
+
+.personal-github {
+  z-index: 102;
+}
+
+.personal-github-name {
+  position: absolute;
+  color: white;
+  font-size: 45px;
+  z-index: 100;
+  top: 20%;
+  left: 31%
+}
+
+.personal-github-logo {
+  position: absolute;
+  color: white;
+  font-size: 45px;
+  z-index: 100;
+  top: 50%;
+  left: 44%
 }
