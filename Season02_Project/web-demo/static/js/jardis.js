@@ -61,10 +61,18 @@
           $('#answer').val(outputMessage)
 
           const c = $('#story').children()
-          for (let i = 0; i < c.length; i++) {
+        //  for (let i = 0; i < c.length; i++) {
+        //    const p = predProbAll[word2idx[c[i].innerText]]
+        //    if (p && p > 0.3) {
+        //      c[i].setAttribute("style",`background-color: rgba(255, 255, 0, ${ p }`)
+        //    }
+        //  }
+
+          for (let i = c.length - 1; i >= 0; i--) {
             const p = predProbAll[word2idx[c[i].innerText]]
-            if (p && p > 0.3) {
-              c[i].setAttribute("style",`background-color: rgba(255, 255, 0, ${ p }`)
+            if (c[i].innerText === correctAnswer) {
+              c[i].setAttribute("style", `background-color: rgba(255, 255, 0, ${ p })`)
+              break
             }
           }
         })
