@@ -36,3 +36,12 @@ div.shadow {
   line-height: 1.25;
   color: #495057;
 }
+
+#story-select {
+  margin-bottom: 15px;
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}

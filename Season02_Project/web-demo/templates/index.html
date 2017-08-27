@@ -75,7 +75,29 @@
             <div class="col-md-6 shadow qa-container">
               <form class="qa-form">
                 <div class="form-group story-form-group">
-                  <h4><label for="story">Story</label></h4>
+                  <h4><label for="story" style="text-transform: none;">bAbI STORY</label></h4>
+                  <select id="story-select">
+                    <option value="single-supporting-fact_10k">single-supporting-fact_10k</option>
+                    <option value="two-supporting-facts_10k">two-supporting-facts_10k</option>
+                    <option value="three-supporting-facts_10k">three-supporting-facts_10k</option>
+                    <option value="two-arg-relations_10k">two-arg-relations_10k</option>
+                    <option value="three-arg-relations_10k">three-arg-relations_10k</option>
+                    <option value="yes-no-questions_10k">yes-no-questions_10k</option>
+                    <option value="counting_10k">counting_10k</option>
+                    <option value="lists-sets_10k">lists-sets_10k</option>
+                    <option value="simple-negation_10k">simple-negation_10k</option>
+                    <option value="indefinite-knowledge_10k">indefinite-knowledge_10k</option>
+                    <option value="basic-coreference_10k">basic-coreference_10k</option>
+                    <option value="conjunction_10k">conjunction_10k</option>
+                    <option value="compound-coreference_10k">compound-coreference_10k</option>
+                    <option value="time-reasoning_10k">time-reasoning_10k</option>
+                    <option value="basic-deduction_10k">basic-deduction_10k</option>
+                    <option value="basic-induction_10k">basic-induction_10k</option>
+                    <option value="positional-reasoning_10k">positional-reasoning_10k</option>
+                    <option value="size-reasoning_10k">size-reasoning_10k</option>
+                    <option value="path-finding_10k">path-finding_10k</option>
+                    <option value="agents-motivations_10k">agents-motivations_10k</option>
+                  </select>
                   <div id="story"></div>
                 </div>
               </form>
@@ -280,7 +302,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="../static/js/freelancer.js"></script>
-    <script src="{{ url_for('static', filename='js/jardis.js') }}"></script>
+    <script src="../static/js/jardis.js"></script>
     <script>
       $('#zaki').on('click', function() {
         window.open('https://github.com/lezakkaz', '_blank')
